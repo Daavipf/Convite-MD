@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+section {
+  background-size: cover;
+  height: 93vh;
+  padding: 2rem;
+  /* border: 1px solid red; */
+  background-image: url("./bg_flower.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.corner {
+  width: 150px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* Posicionamento base */
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+/* Ajuste individual de orientação para cada canto */
+.top.left {
+  /* Posição padrão, geralmente não precisa de transform */
+}
+
+.top.right {
+  transform: scaleX(-1);
+}
+
+.bottom.left {
+  transform: scaleY(-1);
+}
+
+.bottom.right {
+  /* Inverte nos dois eixos para fechar a moldura */
+  transform: scale(-1, -1);
+}
+
+.mouse {
+  position: absolute;
+  bottom: 8%;
+  width: 36px;
+  animation: float 2s infinite;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  z-index: 1;
+  color: #90785a;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  color: #998675;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
