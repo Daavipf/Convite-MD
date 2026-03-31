@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manual de Padrinhos | MD</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
   </head>
   <body>
     <section>
@@ -37,22 +38,34 @@
       <h2>Madrinha</h2>
       <p>
         Nesse momento tão especial gostaríamos que escolhesse o modelo de
-        vestido que se sinta mais confortável e bonita nos tons abaixo.
+        vestido que se sinta mais confortável e bonita nos tons abaixo. A cor
+        principal será <strong>Rosé Gold</strong>.
       </p>
+
+      <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">
+          <img src="arrow.svg" alt="" class="arrow" />
+        </button>
+        <div class="carousel-container">
+          <img src="madrinhas.png" alt="" class="carousel-item active" />
+          <img src="dresses.png" alt="" class="carousel-item" />
+          <img src="pallete.jpeg" alt="" class="carousel-item" />
+        </div>
+        <button class="next" onclick="moveSlide(1)">
+          <img src="arrow.svg" alt="" class="arrow" />
+        </button>
+      </div>
     </section>
     <section>
-      <img src="corner.png" alt="" class="corner top left" />
-      <img src="corner.png" alt="" class="corner top right" />
-      <img src="corner.png" alt="" class="corner bottom left" />
-      <img src="corner.png" alt="" class="corner bottom right" />
-      <div>
+      <div class="padrinhos">
         <h2>Padrinho</h2>
         <p>
           Antes de tudo, queremos que você se sinta confortável e elegante! Para
-          harmonizar e padronizar nosso dia, pedimos que use sapato social,
-          terno Bege claro, camisa branca e gravata na cor do vestido da
-          madrinha
+          harmonizar e padronizar nosso dia, pedimos que use terno
+          <strong>Bege Claro</strong>, camisa branca e gravata na mesma cor do
+          terno
         </p>
+        <img src="padrinhos.png" alt="" />
       </div>
     </section>
     <section>
@@ -61,6 +74,16 @@
       <img src="corner.png" alt="" class="corner bottom left" />
       <img src="corner.png" alt="" class="corner bottom right" />
       <h2>Data e Horário</h2>
+      <div class="date-time-grid">
+        <div><h3>Julho</h3></div>
+        <div class="dt-grid-middle">
+          <h3>Sábado</h3>
+          <h3 class="day">04</h3>
+          <h3>19:00</h3>
+        </div>
+        <div><h3>2026</h3></div>
+      </div>
+      <h3>Save the date</h3>
     </section>
     <section>
       <img src="corner.png" alt="" class="corner top left" />
@@ -68,10 +91,24 @@
       <img src="corner.png" alt="" class="corner bottom left" />
       <img src="corner.png" alt="" class="corner bottom right" />
       <h2>Local</h2>
+      <img src="church.png" alt="" class="church" />
       <p>
         Igreja BethShalom de Cachoeirinha<br />Av. Boa Vista, 696, Cachoeirinha
         PE
       </p>
     </section>
+    <section>
+      <img src="corner.png" alt="" class="corner top left" />
+      <img src="corner.png" alt="" class="corner top right" />
+      <img src="corner.png" alt="" class="corner bottom left" />
+      <img src="corner.png" alt="" class="corner bottom right" />
+      <h2>Lista de Presentes</h2>
+      <p>
+        Igreja BethShalom de Cachoeirinha<br />Av. Boa Vista, 696, Cachoeirinha
+        PE
+      </p>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -45,11 +45,6 @@ section {
   right: 0;
 }
 
-/* Ajuste individual de orientação para cada canto */
-.top.left {
-  /* Posição padrão, geralmente não precisa de transform */
-}
-
 .top.right {
   transform: scaleX(-1);
 }
@@ -99,6 +94,54 @@ p {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.madrinhas {
+  width: 200px;
+  z-index: 1;
+}
+
+.padrinhos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b2e96a28;
+  border: 2px solid #638f29;
+  border-radius: 8px;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  padding: 20px;
+}
+
+.padrinhos img {
+  width: 300px;
+}
+
+.church {
+  width: 300px;
+}
+
+.date-time-grid {
+  display: grid;
+  grid-template-rows: 3;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.date-time-grid h3 {
+  margin: 0;
+}
+
+.dt-grid-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.dt-grid-middle h3.day {
+  font-size: 4rem;
+  border-left: 1px solid #90785a;
+  border-right: 1px solid #90785a;
 }
 
 @keyframes float {

@@ -1,0 +1,74 @@
+/* Estilo do Carrossel */
+.carousel {
+  position: relative;
+  max-width: 60vw; /* Ajuste conforme necessário */
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: none; /* Esconde todas as imagens por padrão */
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  animation: fade 0.5s;
+}
+
+.carousel-item.active {
+  display: block; /* Mostra apenas a ativa */
+}
+
+/* Botões */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(194, 61, 116, 0.15);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 9999px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.prev {
+  left: -50px;
+}
+.next {
+  right: -50px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(194, 61, 116, 0.4);
+}
+
+.arrow {
+  width: 32px;
+}
+
+.prev img.arrow {
+  transform: scaleX(-1);
+}
+
+/* Animação simples de transição */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
