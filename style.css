@@ -116,9 +116,10 @@ p {
 }
 
 .maps-button {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   background-color: #90785a;
-  padding: 6px 20px;
+  padding: 6px 24px;
   border-radius: 999px;
   text-decoration: none;
   font-family: "Cormorant Garamond", serif;

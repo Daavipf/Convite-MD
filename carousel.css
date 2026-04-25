@@ -46,14 +46,11 @@
 
 .prev {
   left: -50px;
+  background-color: rgb(196, 147, 101);
 }
 .next {
   right: -50px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(194, 61, 116, 0.4);
+  background-color: rgb(196, 147, 101);
 }
 
 .arrow {
@@ -62,6 +59,23 @@
 
 .prev img.arrow {
   transform: scaleX(-1);
+}
+
+/* Garante que o item escondido por cor NUNCA apareça */
+.carousel-item.hidden {
+  display: none !important;
+}
+
+.carousel-item {
+  display: none; /* Esconde por padrão */
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  animation: fade 0.5s;
+}
+
+.carousel-item.active {
+  display: block; /* Mostra apenas se for ativo */
 }
 
 /* Animação simples de transição */
