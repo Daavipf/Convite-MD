@@ -28,7 +28,7 @@ section {
 .corner {
   width: 150px;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* Posicionamento base */
